@@ -47,8 +47,16 @@
                                     <constraint firstAttribute="width" constant="300" id="bNV-om-ZKS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="LOG IN"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YB-Xh-4Jh">
+                                <rect key="frame" x="79.5" y="157.5" width="255" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,12 +64,14 @@
                             <constraint firstItem="ZX5-kS-Q6t" firstAttribute="width" secondItem="sJn-K9-gt5" secondAttribute="width" id="CsF-SM-PXl"/>
                             <constraint firstItem="ZX5-kS-Q6t" firstAttribute="top" secondItem="sJn-K9-gt5" secondAttribute="bottom" constant="30" id="N5X-fa-7xt"/>
                             <constraint firstItem="sJn-K9-gt5" firstAttribute="top" secondItem="xNW-iw-Bpt" secondAttribute="bottom" constant="30" id="NH4-EB-npE"/>
+                            <constraint firstItem="6YB-Xh-4Jh" firstAttribute="centerX" secondItem="ClH-8a-iwh" secondAttribute="centerX" id="OpI-C3-q1f"/>
                             <constraint firstItem="xNW-iw-Bpt" firstAttribute="width" secondItem="sJn-K9-gt5" secondAttribute="width" id="UpS-pM-kS3"/>
                             <constraint firstItem="xNW-iw-Bpt" firstAttribute="trailing" secondItem="sJn-K9-gt5" secondAttribute="trailing" id="bdl-nt-UI2"/>
                             <constraint firstItem="xNW-iw-Bpt" firstAttribute="top" secondItem="k6D-04-CZx" secondAttribute="top" constant="233.5" id="kPh-3Q-b3L"/>
                             <constraint firstItem="ZX5-kS-Q6t" firstAttribute="centerX" secondItem="ClH-8a-iwh" secondAttribute="centerX" id="tbN-ok-baI"/>
                             <constraint firstItem="sJn-K9-gt5" firstAttribute="centerX" secondItem="ClH-8a-iwh" secondAttribute="centerX" id="uDd-fD-C0G"/>
                             <constraint firstItem="xNW-iw-Bpt" firstAttribute="leading" secondItem="sJn-K9-gt5" secondAttribute="leading" id="uJC-47-ENc"/>
+                            <constraint firstItem="xNW-iw-Bpt" firstAttribute="top" secondItem="6YB-Xh-4Jh" secondAttribute="bottom" constant="60" id="yVS-xx-6hT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6D-04-CZx"/>
                     </view>
