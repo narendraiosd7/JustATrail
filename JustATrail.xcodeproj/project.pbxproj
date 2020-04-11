@@ -13,6 +13,7 @@
 		D96063B12441AD7B0058E065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96063AF2441AD7B0058E065 /* Main.storyboard */; };
 		D96063B32441AD810058E065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96063B22441AD810058E065 /* Assets.xcassets */; };
 		D96063B62441AD810058E065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96063B42441AD810058E065 /* LaunchScreen.storyboard */; };
+		D96063C02441BE0C0058E065 /* DasboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96063BF2441BE0C0058E065 /* DasboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D96063B22441AD810058E065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96063B52441AD810058E065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96063B72441AD810058E065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96063BF2441BE0C0058E065 /* DasboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D96063A92441AD7B0058E065 /* AppDelegate.swift */,
 				D96063AB2441AD7B0058E065 /* SceneDelegate.swift */,
 				D96063AD2441AD7B0058E065 /* ViewController.swift */,
+				D96063BF2441BE0C0058E065 /* DasboardViewController.swift */,
 				D96063AF2441AD7B0058E065 /* Main.storyboard */,
 				D96063B22441AD810058E065 /* Assets.xcassets */,
 				D96063B42441AD810058E065 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				D96063AE2441AD7B0058E065 /* ViewController.swift in Sources */,
 				D96063AA2441AD7B0058E065 /* AppDelegate.swift in Sources */,
+				D96063C02441BE0C0058E065 /* DasboardViewController.swift in Sources */,
 				D96063AC2441AD7B0058E065 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
