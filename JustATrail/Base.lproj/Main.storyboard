@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JustATrail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="J2v-Mq-kOF">
+            <objects>
+                <viewController storyboardIdentifier="login" id="oT7-4m-LWM" customClass="LoginViewController" customModule="JustATrail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ClH-8a-iwh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNW-iw-Bpt">
+                                <rect key="frame" x="57" y="277.5" width="300" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sJn-K9-gt5">
+                                <rect key="frame" x="57" y="352" width="300" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX5-kS-Q6t">
+                                <rect key="frame" x="57" y="427.5" width="300" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="bNV-om-ZKS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="LOG IN"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZX5-kS-Q6t" firstAttribute="centerY" secondItem="ClH-8a-iwh" secondAttribute="centerY" id="3FY-vZ-nN6"/>
+                            <constraint firstItem="ZX5-kS-Q6t" firstAttribute="width" secondItem="sJn-K9-gt5" secondAttribute="width" id="CsF-SM-PXl"/>
+                            <constraint firstItem="ZX5-kS-Q6t" firstAttribute="top" secondItem="sJn-K9-gt5" secondAttribute="bottom" constant="30" id="N5X-fa-7xt"/>
+                            <constraint firstItem="sJn-K9-gt5" firstAttribute="top" secondItem="xNW-iw-Bpt" secondAttribute="bottom" constant="30" id="NH4-EB-npE"/>
+                            <constraint firstItem="xNW-iw-Bpt" firstAttribute="width" secondItem="sJn-K9-gt5" secondAttribute="width" id="UpS-pM-kS3"/>
+                            <constraint firstItem="xNW-iw-Bpt" firstAttribute="trailing" secondItem="sJn-K9-gt5" secondAttribute="trailing" id="bdl-nt-UI2"/>
+                            <constraint firstItem="xNW-iw-Bpt" firstAttribute="top" secondItem="k6D-04-CZx" secondAttribute="top" constant="233.5" id="kPh-3Q-b3L"/>
+                            <constraint firstItem="ZX5-kS-Q6t" firstAttribute="centerX" secondItem="ClH-8a-iwh" secondAttribute="centerX" id="tbN-ok-baI"/>
+                            <constraint firstItem="sJn-K9-gt5" firstAttribute="centerX" secondItem="ClH-8a-iwh" secondAttribute="centerX" id="uDd-fD-C0G"/>
+                            <constraint firstItem="xNW-iw-Bpt" firstAttribute="leading" secondItem="sJn-K9-gt5" secondAttribute="leading" id="uJC-47-ENc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k6D-04-CZx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikz-82-CgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="103.79464285714285"/>
         </scene>
     </scenes>
 </document>
